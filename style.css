@@ -302,13 +302,13 @@ img{
     
 }
 
-.circulo{
-    width: 10px;
-    height: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+.circulocorreo img,
+.circulonumero img,
+.circulodireccion img{
+    width: 60px !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .circulo img{
