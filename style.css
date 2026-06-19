@@ -1,142 +1,286 @@
-/* ==========================================================
-   ====== DISEÑO PARA CELULARES (MÓVILES Y TABLETS) ======
-   ========================================================== */
-@media (max-width: 992px) {
-    
-    /* 1. Fondo general del celular */
-    body {
-        background-color: #f5d0e8 !important; /* Fuerza el fondo rosa pastel */
-    }
+body{
+    background-color: #f5d0e8;
+}
+.Lavynior img{
+    width: 20%;
+    height: auto;
+    padding: 20px;
+     
+}
 
-    /* 2. Reseteo y centrado de imágenes con márgenes fijos gigantes */
-    img, .mora, .cafe {
-        margin-left: 0 !important;   
-        margin-top: 20px !important;
-        width: 100% !important;      
-        max-width: 320px !important; 
-        display: block;
-        margin: 20px auto !important;
-    }
 
-    /* 3. Tarjeta de información del producto (Mora con Café) */
-    .producto-info {
-        flex-direction: column;      
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 20px;
-    }
 
-    .Product {
-        margin: 20px auto !important;
-        width: 150px !important;     
-    }
+img{
+    margin-left: 440px; /* mueve a la derecha */
+    margin-bottom: -4%;
+    width: 500px !important;
+    height: auto !important;
+}
 
-    .Product:hover {
-        transform: scale(1.2);       
-    }
 
-    .texto-producto {
-        opacity: 1 !important;        /* Hace el texto siempre visible */
-        transform: translateX(0) !important;
-        padding: 10px;
-        color: #333333 !important;    /* Color de texto oscuro para que se lea bien */
-    }
+.menu-container{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
 
-    /* 4. Sección de Bienvenida (Hero) y textos */
-    .hero {
-        flex-direction: column;      
-        padding: 30px 20px;
-        text-align: center;
-    }
+.menu-btn{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(71, 48, 48);
+    border-radius: 50%;
+    background: #ff8ad2;
+    color: rgb(245, 242, 242);
+    font-size: 30px;
+    cursor: pointer;
+}
 
-    .hero-texto {
-        width: 100%;
-    }
+.menu-content{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0x;
+    min-width: 260px;
+    background:rgb(255, 14, 175);;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
 
-    .hero h1 {
-        font-size: 38px;             
-        line-height: 44px;
-        color: #111111 !important;
-    }
+.menu-content a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
 
-    .hero h1 span {
-        color: #d400ff !important;    /* El toque fucsia brillante para resaltar */
-    }
+.menu-content a:hover{
+    background: #00ff95;
+}
 
-    .hero p {
-        font-size: 18px;
-        width: 100%;                 
-        color: #444444 !important;
-    }
+.menu-content.show{
+    display: block;
+}
 
-    .hero-imagenes {
-        width: 100%;
-        margin-top: 30px;
-    }
+.productos img{
+    width: 170px;
+    transition: opacity 0.3s ease;
+}
 
-    /* 5. Contenedor de Misión, Visión e Historia */
-    .contenedor {
-        flex-direction: column;      
-        gap: 30px;
-        padding: 20px;
-    }
+.productos:hover img{
+    opacity: 0.3; /* todas se vuelven tenues */
+}
 
-    .misionvision, .historia {
-        width: 100%;
-        position: static;            
-    }
+.productos img:hover{
+    opacity: 1; /* la que tiene el ratón vuelve a verse normal */
+}
+.mora{
+    margin-left: 550px;
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+}
 
-    .historia h1 {
-        font-size: 32px;
-        text-align: center;
-        color: #4d5968 !important;
-    }
+.cafe{
+    margin-left: 550px;
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+}
 
-    .linea {
-        margin: 0 auto 20px auto;    
-        background-color: rgb(184, 7, 131) !important; /* Mantiene la línea fucsia viva */
-    }
+.boton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #ff1493;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 
-    /* 6. Sección de Testimonios / Carrusel */
-    .tarjeta {
-        width: 90% !important;                  
-        background: rgb(219, 163, 216) !important; /* Obliga a la tarjeta a ser rosa/morada */
-        padding: 20px;
-        margin: 0 auto;
-    }
+}
 
-    .tarjeta h2 {
-        font-size: 22px;
-        color: #1f3552 !important;
-    }
+.boton:hover{
+    transform: translateX(15px); /* Se desliza hacia la derecha */
+    background: #ff69b4;
+}
 
-    /* 7. Menú Desplegable en Celular */
-    .menu-btn {
-        width: 60px;                 
-        height: 60px;
-        font-size: 24px;
-        background: #ff8ad2 !important; /* Botón rosa */
-        color: #ffffff !important;
-    }
 
-    .menu-content {
-        min-width: 240px;
-        background: rgb(255, 14, 175) !important; /* Fondo fucsia fuerte para el menú */
-    }
+.producto-info{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+}
 
-    .menu-content a {
-        color: #ffffff !important;    /* Enlaces blancos */
-    }
+.texto-producto{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+}
 
-    /* 8. Botón flotante de Inicio */
-    .boton {
-        position: static;            
-        display: block;
-        width: fit-content;
-        margin: 20px auto;
-        text-align: center;
-        background: #ff1493 !important; /* Fuerza el fucsia del botón */
-        color: #ffffff !important;
-    }
+/* Solo cuando el mouse está sobre la imagen */
+.Product:hover + .texto-producto{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Product{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.Product:hover{
+    transform: scale(2.0);
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-texto{
+    width: 55%;
+}
+
+.hero h4{
+    color:#333;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:75px;
+    font-weight:800;
+    line-height:80px;
+    color:#111;
+    margin:10px 0;
+}
+
+.hero h1 span{
+    color:#d400ff;
+}
+
+.hero p{
+    font-size:24px;
+    font-weight:600;
+    color:#444;
+    width:650px;
+}
+
+.hero-imagenes{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.hero-imagenes img{
+    width:320px;
+    height:auto;
+    margin:0;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.hero-imagenes img:hover{
+    transform:scale(1.08);
+}
+.contenedor{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 80px;
+    padding: 0px;
+}
+
+.misionvision{
+    width: 45%;
+    position: sticky;
+    top: 90px;
+    align-self: flex-start;
+}
+
+.historia{
+    flex: 1;
+
+    margin-left: 0;
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+
+.historia h1{
+    font-size: 50px;
+    color: #4d5968;
+    margin-bottom: 15px;
+}
+
+.linea{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(184, 7, 131);
+    margin-bottom: 30px;
+}
+
+.historia p{
+    font-size: 24px;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta{
+   
+    width: 650px;
+    max-width: 100%;
+    background: rgb(219, 163, 216);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.tarjeta h2{
+    color: #1f3552;
+    margin-bottom: 20px;
+}
+
+.tarjeta p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.flecha{
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    background: transparent;
+    margin: 20px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.derecha:hover{
+    transform: translateX(15px);
+    color: rgb(255, 0, 179);                                                  
 }
