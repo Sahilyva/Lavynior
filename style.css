@@ -284,3 +284,57 @@ img{
     transform: translateX(15px);
     color: rgb(255, 0, 179);                                                  
 }
+.contenedor-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacio vertical entre cada item */
+}
+
+/* Estilo para cada fila (icono + texto) */
+.item-contacto {
+    display: flex;
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    gap: 20px; /* Espacio horizontal entre el icono y el texto */
+}
+
+/* Estilo para el círculo del icono */
+.icono-contenedor {
+    width: 80px; /* Ajusta este tamaño según tus imágenes originales */
+    height: 80px;
+    border-radius: 50%; /* Hace el círculo perfecto */
+    border: 2px solid #f9cc3d; /* Color amarillo/dorado de la imagen */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente dentro del círculo */
+    align-items: center;     /* Centra la imagen verticalmente dentro del círculo */
+    padding: 15px; /* Pequeño margen interno para la imagen */
+    background-color: white; /* Asegura fondo blanco dentro del círculo */
+}
+
+/* Asegura que la imagen dentro del círculo no se deforme */
+.icono-contenedor img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Estilos para el texto de contacto */
+.texto-contenedor h3 {
+    font-size: 20px;
+    color: #444; /* Color gris oscuro para el título */
+    margin-bottom: 5px; /* Espacio entre título y dato */
+    font-weight: 600;
+}
+
+.texto-contenedor p {
+    font-size: 16px;
+    color: #666; /* Color gris más claro para el dato */
+    margin-bottom: 2px;
+}
+
+/* Estilo específico para la segunda línea de dirección (Bogotá / Colombia) */
+.texto-contenedor p.sub-direccion {
+    font-size: 15px;
+    color: #888;
+}
