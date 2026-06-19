@@ -312,8 +312,9 @@ img{
 }
 
 .circulo img{
-    width: 0px;
-    height: 0px;
+    width: 80px !important;
+    height: auto !important;
+    margin-left: 0;
 }
 
 
