@@ -290,7 +290,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 35px; /* Espacio vertical entre cada fila */
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Fila que junta el círculo y el texto */
