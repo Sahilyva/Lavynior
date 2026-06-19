@@ -13,8 +13,8 @@ body{
 img{
     margin-left: 440px; /* mueve a la derecha */
     margin-bottom: -4%;
-    width: 500px;
-    height: auto;
+    width: 500px !important;
+    height: auto !important;
 }
 
 
@@ -302,11 +302,18 @@ img{
     
 }
 
-
+.circulo{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
 
 .circulo img{
-    width: 80px ;
-    height: 80px;
+    width: 80px !important;
+    height: 80px !important;
     margin-left: 0 !important;
 }
 
@@ -317,11 +324,11 @@ img{
 
 .texto h3{
     margin: 0 0 20px 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .texto p{
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 22px;
 }
