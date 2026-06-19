@@ -1,27 +1,22 @@
+<!DOCTYPE html>
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ]><!-->
+<html lang="es" class="no-js">
+<!--<![endif]-->
 
-   <!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="theme-color" content="#cb2334" />
     <title>Lavynior</title>
-    
-    <link rel="stylesheet" href="style.css" />
-
-    <script type="text/javascript">
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            if (menu) {
-                menu.classList.toggle("show");
-            }
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="ex.css">
+        <script type="text/javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var originalAddEventListener = EventTarget.prototype.addEventListener,
+                oldWidth = window.innerWidth;
         }
 
-        // Detección opcional para móviles
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            var originalAddEventListener = EventTarget.prototype.addEventListener;
-            var oldWidth = window.innerWidth;
-        }     
+        
 
     </script>
 </head>
@@ -34,7 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lavynior</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ex.css">
 
     <script>
         function toggleMenu() {
@@ -53,7 +48,9 @@
     <div class="logo">
     <img src="img/Lavynior.png" alt="Logo">
 </div>
-   
+
+
+
     <div class="menu-container">
         <button class="menu-btn" onclick="toggleMenu()">
             ☰
@@ -75,7 +72,7 @@
         <h1>
             Expertos en <br>
             manejar los mejores productos derivados del<br>
-            <span>Café </span>
+            <span>Café</span>
         </h1>
 
         <p>
