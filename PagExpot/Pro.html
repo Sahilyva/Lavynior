@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavynior</title>
+
+    <link rel="stylesheet" href="ex.css">
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var originalAddEventListener = EventTarget.prototype.addEventListener;
+            var oldWidth = window.innerWidth;
+        }
+    </script>
+</head>
+<body>
+   
+
+     <div class="producto-info">
+         <a href="ex.html" class="boton">Inicio</a>
+    <img class="Product" src="img/mermelada.png" alt="producto">
+
+    <div class="texto-producto">
+        <h3>Mermelada de Mora con Café</h3>
+        <p>
+            Producto untable obtenido mediante la cocción lenta y controlada de moras seleccionadas en su punto óptimo de maduración, fusionado homogéneamente con un extracto concentrado de café de alta calidad, resultando en un equilibrio perfecto entre la acidez frutal y las notas tostadas del grano.
+        </p>
+    </div>
+</div>
+</body>

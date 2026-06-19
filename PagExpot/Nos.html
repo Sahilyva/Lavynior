@@ -1,0 +1,108 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavynior</title>
+
+    <link rel="stylesheet" href="ex.css">
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var originalAddEventListener = EventTarget.prototype.addEventListener;
+            var oldWidth = window.innerWidth;
+        }
+    </script>
+</head>
+<body>
+    <a href="ex.html" class="boton">Inicio</a>
+    <section class="historia">
+
+
+   <div class="contenedor">
+
+    <!-- MISION Y VISION -->
+    <div class="misionvision">
+
+        <div class="carrusel">
+
+            <button class="flecha izquierda" onclick="anterior()">❮</button>
+
+            <div class="tarjeta">
+                <div id="contenido">
+                    <h2>MISIÓN – LAVYNIOR COFFEE TRADING, SUCURSAL SUR</h2>
+
+                    <p>
+                        En Lavynior Coffee Trading Sucursal Sur nos dedicamos a la producción,
+                        transformación, comercialización y exportación de derivados del café
+                        de alta calidad, ofreciendo productos que reflejan la excelencia del
+                        café colombiano. Trabajamos con responsabilidad social,
+                        sostenibilidad ambiental e innovación constante, garantizando la
+                        satisfacción de nuestros clientes nacionales e internacionales y
+                        contribuyendo al desarrollo económico de nuestra región.
+                    </p>
+                </div>
+            </div>
+
+            <button class="flecha derecha" onclick="siguiente()">❯</button>
+
+        </div>
+
+    </div>
+
+    <!-- TEXTO EMPRESA -->
+    <section class="historia">
+
+        <h1>Lavynior Coffee Trading / Sucursal Sur</h1>
+        <div class="linea"></div>
+
+        <p>
+            La empresa “Lavynior Coffee Trading / Sucursal Sur” desarrolla un proceso de comercio exterior que integra tanto la exportación de un producto agroindustrial colombiano como la importación de maquinaria especializada para fortalecer su capacidad productiva. Esta operación permite la articulación del comercio nacional e internacional mediante el intercambio de bienes, tecnología y valor agregado.
+        </p>
+
+        <p>
+            La mermelada de mora con café es un producto elaborado a partir de materias primas colombianas de alta calidad. Su proceso productivo inicia con la selección y recepción de la mora y el café, seguido de la limpieza, clasificación y preparación de los ingredientes.
+        </p>
+
+        <p>
+            Posteriormente, se realiza la cocción de la mezcla junto con azúcar y otros componentes autorizados para obtener la consistencia requerida. Durante esta etapa se utilizan máquinas homogenizadoras, las cuales garantizan una mezcla uniforme, mejoran la textura del producto, optimizan los tiempos de producción y aseguran estándares de calidad exigidos por los mercados internacionales.
+        </p>
+
+        <p>
+            Finalmente, la mermelada es envasada en frascos de vidrio, etiquetada y empacada para su comercialización.
+        </p>
+
+    </section>
+
+</div>
+
+<script>
+const textos = [
+{
+titulo: "MISIÓN – LAVYNIOR COFFEE TRADING, SUCURSAL SUR",
+texto: "En Lavynior Coffee Trading Sucursal Sur nos dedicamos a la producción, transformación, comercialización y exportación de derivados del café de alta calidad, ofreciendo productos que reflejan la excelencia del café colombiano. Trabajamos con responsabilidad social, sostenibilidad ambiental e innovación constante, garantizando la satisfacción de nuestros clientes nacionales e internacionales y contribuyendo al desarrollo económico de nuestra región."
+},
+{
+titulo: "VISIÓN – LAVYNIOR COFFEE TRADING, SUCURSAL SUR",
+texto: "Para el año 2030, Lavynior Coffee Trading Sucursal Sur será reconocida como una sucursal líder en la comercialización y exportación de productos derivados del café, destacándose por su calidad, innovación, sostenibilidad y cumplimiento. Buscamos consolidar nuestra presencia en mercados internacionales, fortalecer relaciones comerciales duraderas y posicionar el nombre de la empresa como referente de excelencia en el sector cafetero."
+}
+];
+
+let actual = 0;
+
+function mostrar(){
+    document.getElementById("contenido").innerHTML =
+    `<h2>${textos[actual].titulo}</h2>
+     <p>${textos[actual].texto}</p>`;
+}
+
+function siguiente(){
+    actual = (actual + 1) % textos.length;
+    mostrar();
+}
+
+</script>
+
+</body>
