@@ -302,14 +302,7 @@ img{
     
 }
 
-.circulocorreo img,
-.circulonumero img,
-.circulodireccion img{
-    width: 60px !important;
-    height: auto !important;
-    margin-left: 0 !important;
-    margin-bottom: 0 !important;
-}
+
 
 .circulo img{
     width: 80px ;
