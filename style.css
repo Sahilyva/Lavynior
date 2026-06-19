@@ -312,8 +312,8 @@ img{
 }
 
 .circulo img{
-    width: 80px !important;
-    height: 80px !important;
+    width: 80px ;
+    height: 80px;
     margin-left: 0 !important;
 }
 
