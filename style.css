@@ -3,19 +3,24 @@
    ========================================================== */
 @media (max-width: 992px) {
     
-    /* 1. Reseteo general para imágenes con márgenes fijos gigantes */
-    img, .mora, .cafe {
-        margin-left: 0 !important;   /* Eliminamos los 440px y 550px que sacan la imagen de la pantalla */
-        margin-top: 20px !important;
-        width: 100% !important;      
-        max-width: 320px !important; /* Evita que la imagen se vuelva gigante */
-        display: block;
-        margin: 20px auto !important;/* Las centra perfectamente en el celular */
+    /* 1. Fondo general del celular */
+    body {
+        background-color: #f5d0e8 !important; /* Fuerza el fondo rosa pastel */
     }
 
-    /* 2. Tarjeta de información del producto (Mora con Café) */
+    /* 2. Reseteo y centrado de imágenes con márgenes fijos gigantes */
+    img, .mora, .cafe {
+        margin-left: 0 !important;   
+        margin-top: 20px !important;
+        width: 100% !important;      
+        max-width: 320px !important; 
+        display: block;
+        margin: 20px auto !important;
+    }
+
+    /* 3. Tarjeta de información del producto (Mora con Café) */
     .producto-info {
-        flex-direction: column;      /* Apila la imagen arriba y el texto abajo */
+        flex-direction: column;      
         align-items: center;
         text-align: center;
         width: 100%;
@@ -24,22 +29,23 @@
 
     .Product {
         margin: 20px auto !important;
-        width: 150px !important;     /* Tamaño ideal para ver y tocar en pantallas táctiles */
+        width: 150px !important;     
     }
 
     .Product:hover {
-        transform: scale(1.2);       /* Bajamos el scale de 2.0 a 1.2 para que no tape toda la pantalla del teléfono */
+        transform: scale(1.2);       
     }
 
     .texto-producto {
-        opacity: 1 !important;        /* En celular el texto debe ser siempre visible (no hay mouse hover) */
+        opacity: 1 !important;        /* Hace el texto siempre visible */
         transform: translateX(0) !important;
         padding: 10px;
+        color: #333333 !important;    /* Color de texto oscuro para que se lea bien */
     }
 
-    /* 3. Sección de Bienvenida (Hero) */
+    /* 4. Sección de Bienvenida (Hero) y textos */
     .hero {
-        flex-direction: column;      /* Pone el texto arriba y las imágenes abajo */
+        flex-direction: column;      
         padding: 30px 20px;
         text-align: center;
     }
@@ -49,13 +55,19 @@
     }
 
     .hero h1 {
-        font-size: 38px;             /* Achicamos el texto gigante de 75px */
+        font-size: 38px;             
         line-height: 44px;
+        color: #111111 !important;
+    }
+
+    .hero h1 span {
+        color: #d400ff !important;    /* El toque fucsia brillante para resaltar */
     }
 
     .hero p {
         font-size: 18px;
-        width: 100%;                 /* Eliminamos los 650px de ancho fijo */
+        width: 100%;                 
+        color: #444444 !important;
     }
 
     .hero-imagenes {
@@ -63,59 +75,68 @@
         margin-top: 30px;
     }
 
-    .hero-imagenes img {
-        width: 100% !important;
-        max-width: 280px !important;
-    }
-
-    /* 4. Contenedor de Misión, Visión e Historia */
+    /* 5. Contenedor de Misión, Visión e Historia */
     .contenedor {
-        flex-direction: column;      /* Uno debajo del otro en lugar de lados horizontales */
+        flex-direction: column;      
         gap: 30px;
         padding: 20px;
     }
 
     .misionvision, .historia {
         width: 100%;
-        position: static;            /* Desactivamos el sticky en móviles para que fluya bien */
+        position: static;            
     }
 
     .historia h1 {
         font-size: 32px;
         text-align: center;
+        color: #4d5968 !important;
     }
 
     .linea {
-        margin: 0 auto 20px auto;    /* Centra la línea decorativa fucsia */
+        margin: 0 auto 20px auto;    
+        background-color: rgb(184, 7, 131) !important; /* Mantiene la línea fucsia viva */
     }
 
-    /* 5. Sección de Testimonios / Carrusel */
+    /* 6. Sección de Testimonios / Carrusel */
     .tarjeta {
-        width: 90%;                  /* Cambiamos los 650px fijos por porcentaje fluido */
+        width: 90% !important;                  
+        background: rgb(219, 163, 216) !important; /* Obliga a la tarjeta a ser rosa/morada */
         padding: 20px;
         margin: 0 auto;
     }
 
     .tarjeta h2 {
         font-size: 22px;
+        color: #1f3552 !important;
     }
 
-    .tarjeta p {
-        font-size: 16px;
-    }
-
-    /* 6. Ajustes de botones y menú */
+    /* 7. Menú Desplegable en Celular */
     .menu-btn {
-        width: 60px;                 /* Un poco más pequeño para optimizar espacio */
+        width: 60px;                 
         height: 60px;
         font-size: 24px;
+        background: #ff8ad2 !important; /* Botón rosa */
+        color: #ffffff !important;
     }
 
+    .menu-content {
+        min-width: 240px;
+        background: rgb(255, 14, 175) !important; /* Fondo fucsia fuerte para el menú */
+    }
+
+    .menu-content a {
+        color: #ffffff !important;    /* Enlaces blancos */
+    }
+
+    /* 8. Botón flotante de Inicio */
     .boton {
-        position: static;            /* En móviles evita que flote tapando el contenido */
+        position: static;            
         display: block;
         width: fit-content;
         margin: 20px auto;
         text-align: center;
+        background: #ff1493 !important; /* Fuerza el fucsia del botón */
+        color: #ffffff !important;
     }
 }
