@@ -284,57 +284,58 @@ img{
     transform: translateX(15px);
     color: rgb(255, 0, 179);                                                  
 }
+
+/* Contenedor de toda la sección */
 .contenedor-contacto {
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Espacio vertical entre cada item */
+    gap: 35px; /* Espacio vertical entre cada fila */
+    padding: 20px;
 }
 
-/* Estilo para cada fila (icono + texto) */
+/* Fila que junta el círculo y el texto */
 .item-contacto {
     display: flex;
-    align-items: center; /* Centra verticalmente el icono y el texto */
-    gap: 20px; /* Espacio horizontal entre el icono y el texto */
+    align-items: center; /* Centra verticalmente el círculo con el texto */
+    gap: 25px; /* Espacio horizontal entre el círculo y el texto */
 }
 
-/* Estilo para el círculo del icono */
-.icono-contenedor {
-    width: 80px; /* Ajusta este tamaño según tus imágenes originales */
+/* El círculo contenedor del icono */
+.circulo {
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* Hace el círculo perfecto */
-    border: 2px solid #f9cc3d; /* Color amarillo/dorado de la imagen */
+    border-radius: 50%;
+    border: 2px solid #e91e63; /* Color rosado para el borde */
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente dentro del círculo */
-    align-items: center;     /* Centra la imagen verticalmente dentro del círculo */
-    padding: 15px; /* Pequeño margen interno para la imagen */
-    background-color: white; /* Asegura fondo blanco dentro del círculo */
+    justify-content: center; /* Centra el PNG horizontalmente */
+    align-items: center;     /* Centra el PNG verticalmente */
+    background-color: transparent; /* Al ser PNG transparente, tomará el fondo rosa de tu web */
+    flex-shrink: 0; /* Evita que el círculo se deforme si el texto es largo */
 }
 
-/* Asegura que la imagen dentro del círculo no se deforme */
-.icono-contenedor img {
-    max-width: 100%;
-    max-height: 100%;
+/* Control del tamaño de la imagen PNG */
+.circulo img {
+    max-width: 70%; /* Ajusta este porcentaje si quieres el icono más grande o chico */
+    max-height: 70%;
     object-fit: contain;
 }
 
-/* Estilos para el texto de contacto */
-.texto-contenedor h3 {
+/* Estilos de los textos */
+.texto h3 {
     font-size: 20px;
-    color: #444; /* Color gris oscuro para el título */
-    margin-bottom: 5px; /* Espacio entre título y dato */
-    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    font-family: sans-serif; /* Cambia por tu tipografía */
 }
 
-.texto-contenedor p {
+.texto p {
     font-size: 16px;
-    color: #666; /* Color gris más claro para el dato */
-    margin-bottom: 2px;
+    color: #555;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-/* Estilo específico para la segunda línea de dirección (Bogotá / Colombia) */
-.texto-contenedor p.sub-direccion {
+.texto p.sub-texto {
+    color: #777;
     font-size: 15px;
-    color: #888;
 }
