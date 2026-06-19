@@ -286,56 +286,49 @@ img{
 }
 
 /* Contenedor de toda la sección */
-.contenedor-contacto {
+.contenedor-contacto{
     display: flex;
     flex-direction: column;
-    gap: 35px; /* Espacio vertical entre cada fila */
-    padding: 10px;
-}
+    align-items: center; /* centra todo */
+    gap: 50px;
+    width: 6%;
+} 
 
-/* Fila que junta el círculo y el texto */
-.item-contacto {
+.item-contacto{
     display: flex;
-    align-items: center; /* Centra verticalmente el círculo con el texto */
-    gap: 25px; /* Espacio horizontal entre el círculo y el texto */
+    align-items: center;
+    width: 700px; /* ajusta según necesites */
+    
 }
 
-/* El círculo contenedor del icono */
-.circulo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #e91e63; /* Color rosado para el borde */
+.circulo{
+    width: 50px;
+    height: 50px;
     display: flex;
-    justify-content: center; /* Centra el PNG horizontalmente */
-    align-items: center;     /* Centra el PNG verticalmente */
-    background-color: transparent; /* Al ser PNG transparente, tomará el fondo rosa de tu web */
-    flex-shrink: 0; /* Evita que el círculo se deforme si el texto es largo */
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-/* Control del tamaño de la imagen PNG */
-.circulo img {
-    max-width: 70%; /* Ajusta este porcentaje si quieres el icono más grande o chico */
-    max-height: 70%;
+.circulo img{
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
     object-fit: contain;
 }
 
-/* Estilos de los textos */
-.texto h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 4px;
-    font-family: sans-serif; /* Cambia por tu tipografía */
+.texto{
+    margin-left: 30px;
 }
 
-.texto p {
-    font-size: 16px;
-    color: #555;
-    margin: 0;
-    font-family: sans-serif;
+.texto h3{
+    margin: 0 0 15px 0;
+    font-size: 38px;
+    font-weight: bold;
 }
 
-.texto p.sub-texto {
-    color: #777;
-    font-size: 15px;
+.texto p{
+    margin: 5px 0;
+    font-size: 22px;
 }
