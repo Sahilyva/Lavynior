@@ -291,7 +291,8 @@ img{
     flex-direction: column;
     align-items: center; /* centra todo */
     gap: 50px;
-    width: 6%;
+    width: 10%;
+    height:10%
 } 
 
 .item-contacto{
@@ -302,8 +303,8 @@ img{
 }
 
 .circulo{
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,20 +312,18 @@ img{
 }
 
 .circulo img{
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    object-fit: contain;
+    width: 10px;
+    height: 10px;
 }
+
 
 .texto{
     margin-left: 30px;
 }
 
 .texto h3{
-    margin: 0 0 15px 0;
-    font-size: 38px;
+    margin: 0 0 20px 0;
+    font-size: 30px;
     font-weight: bold;
 }
 
